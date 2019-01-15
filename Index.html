@@ -2,17 +2,20 @@
 <html>
 <head>
 	<title> Let's Roll! </title>
-	<link href="style.css" type="text/css" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script type="text/javascript" src="./javascript/javascript.js" ></script>
 </head>
 	<body>
-		<H1> This is how I roll </h1>
-				
-		<button onclick="roll()">Roll!</button>
-		
-		<div>
-			<img id="diceDisplay" src="https://www.janssen-fritsen.nl/system/html/1696030%20AASA%20Dobbelsteen%20Kunststof%20groot_MG_8778-fb7638f5.png" height="300px" width="300px"/>
+		<div class="container">
+			<form method="POST">
+				<p>How many die rolls do you want do you want?</p>
+				<input type="number" name="howMany" id="many" min="1" max="20">
+				<button type="button" onclick="createSomeDice();">Create Dice</button>
+			</form>
 		</div>
-		<script src="javascript.js"></script>
+					
+		  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	</body>
 </html>
